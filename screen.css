@@ -1,0 +1,8 @@
+body { text-align:center; background-color:#333; color:#999; font-size:14px; font-family:'Droid','Georgia',sans-serif; margin:60px; }
+a, a:link, a:visited { color:#fff; text-decoration:none; }
+a:hover { color:#fff; text-decoration:underline; }
+h1 { color:#fff; font-weight:normal; font-size:60px; text-shadow:#000 1px 1px 1px; margin:0; padding:0 6px; letter-spacing:-2px; }
+h1 a:hover { text-decoration:none; }
+h2 { color:#fff; font-weight:normal; margin:0 0 30px 0; font-size:36px; }
+.mark { font-style:italic; background:#f06; padding:3px 8px; -moz-border-radius:3px; border-radius:3px 3px 3px 3px; text-shadow:#c03 1px 1px 1px; }
+img { border: none; }
