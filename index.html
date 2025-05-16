@@ -1,21 +1,53 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>funkreich.de - the nothingness</title>
-    <meta charset="utf-8">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="description" content="funkreich.de is still on indefinite hiatus.">
-    <meta name="author" content="Tobi Kremer">
-    <meta name="copyright" content="Tobi Kremer">
-    <meta name="revisit-after" content="5 days">
-    <meta name="expires" content="0">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="screen.css" media="screen">
-  </head>
-  <body>
-    <div class="container">
-      <img class="brand" src="imgs/funkreich-logo-oldschool.png">
-    </div>
-  </body>
+
+<!-- All content, including graphics and audio, was created for this site and is not to be used without written consent. -->
+
+<head>
+  <title>funkreich.de - the nothingness</title>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="funkreich.de is still on indefinite hiatus.">
+  <meta name="author" content="Tobi Kremer">
+  <meta name="copyright" content="Tobi Kremer">
+  <meta name="revisit-after" content="5 days">
+  <meta name="expires" content="0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="screen.css" media="screen">
+</head>
+
+<body>
+  <div class="container">
+    <img class="brand" src="imgs/funkreich-logo-oldschool.png">
+
+    <button type="button" id="playbutton" class="mute">
+      <svg id="paused" class="muted" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-volume-off-icon lucide-volume-off">
+        <path d="M16 9a5 5 0 0 1 .95 2.293" />
+        <path d="M19.364 5.636a9 9 0 0 1 1.889 9.96" />
+        <path d="m2 2 20 20" />
+        <path
+          d="m7 7-.587.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298V11" />
+        <path d="M9.828 4.172A.686.686 0 0 1 11 4.657v.686" />
+      </svg>
+      <svg id="playing" class="muted hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="lucide lucide-volume2-icon lucide-volume-2">
+        <path
+          d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
+        <path d="M16 9a5 5 0 0 1 0 6" />
+        <path d="M19.364 18.364a9 9 0 0 0 0-12.728" />
+      </svg>
+    </button>
+  </div>
+
+  <script type="module">
+    import { toggleAudio } from './js/audio.js'
+    const button = document.getElementById('playbutton');
+    button.addEventListener('click', toggleAudio);
+  </script>
+</body>
+
 </html>
